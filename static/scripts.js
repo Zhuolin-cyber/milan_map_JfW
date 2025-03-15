@@ -86,7 +86,7 @@ var restaurantIcons = {
 };
 
 // 加载 JSON 数据并添加餐厅标记
-fetch('/static/data.json')
+fetch('static/data.json')
   .then(response => response.json())
   .then(data => {
     data.restaurants.forEach(restaurant => {
