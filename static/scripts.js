@@ -61,7 +61,13 @@ fetch('static/data.json')
       var icon = restaurantIcons[type] || restaurantIcons["默认"];
 
       var marker = L.marker(restaurant.location, { icon: icon })
-        .bindPopup(`<b>${restaurant.name}</b><br>地址：${restaurant.address}<br>特色：${restaurant.description}`);
+    .bindPopup(`
+        <b>${restaurant.name}</b><br>
+        地址：${restaurant.address}<br>
+        特色：${restaurant.description}<br>
+        价格：${restaurant.price}
+    `);
+
 
       restaurantMarkers.push({ marker: marker, type: type });
       
