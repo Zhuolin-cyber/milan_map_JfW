@@ -53,3 +53,15 @@ h1 {
     margin: 0;
     padding: 0;
 }
+
+.legend input[type="checkbox"] {
+    vertical-align: middle;  /* 使复选框与图标居中对齐 */
+    margin-right: 5px;
+    /* transform: translateY(2px);  /* 微调复选框向下移动 */
+}
+.legend img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
