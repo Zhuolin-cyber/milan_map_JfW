@@ -1,0 +1,254 @@
+{
+    "restaurants": [
+    {
+      "name": "启运东北菜",
+      "location": [45.493556312956336, 9.184104937346863],
+      "type": "中餐",
+      "address": "Via Lepontina, 11, 20159",
+      "description": "锅包肉，溜肉段，铁锅炖",
+      "price": "约15欧/人"
+    },
+    {
+      "name": "Ristorante Fortuna",
+      "location": [45.47897917164505, 9.215097013903481],
+      "type": "汤面",
+      "address": "Via Bartolomeo Eustachi, 20129",
+      "description": "嗦粉店(不止嗦粉）",
+      "price": "9欧/人"
+    },
+    {
+      "name": "HARO BBQ",
+      "location": [45.48201811928995, 9.180043996715243],
+      "type": "烤肉",
+      "address": "Via Paolo Sarpi, 6, 20154",
+      "description": "牛柳，五花，限时90min",
+      "price": "35-40欧/人"
+    },
+    {
+      "name": "CHIFA RESTAURANT",
+      "location": [45.48082953021911, 9.181422418803436],
+      "type": "中餐",
+      "address": "Viale Montello, 5, 20154",
+      "description": "xhs排名第一",
+      "price": "15欧/人"
+    },
+    {
+      "name": "Gelateria Gorini con dehors",
+      "location": [45.47344412263926, 9.230525655823437],
+      "type": "甜品",
+      "address": "Piazzale Paolo Gorini, 10, 20133",
+      "description": "提拉米苏，椰子味的都好吃，老板娘不会英语",
+      "price": "1-10欧/人"
+    },
+    {
+      "name": "AUuM (Piazzale Susa)",
+      "location": [45.468969354748175, 9.223363087711407],
+      "type": "西餐",
+      "address": "Piazzale Susa, 7, 20133",
+      "description": "单点，中午的商务套餐都不错，巨大份",
+      "price": "20-30欧/人"
+    },
+    {
+      "name": "Le Chalet",
+      "location": [45.488737628854345, 9.203944096715551],
+      "type": "西餐",
+      "address": "Via ponte seveso 18, Via Tonale, 6, 20125",
+      "description": "国人开的意大利菜，适合中国宝宝",
+      "price": "西餐：20-30欧/人"
+    },
+    {
+      "name": "Kaori Japanese Restaurant",
+      "location": [45.49475794825167, 9.184851722092702],
+      "type": "日料",
+      "address": "Viale Stelvio, 51, 20159",
+      "description": "学长推荐",
+      "price": "30-40欧/人"
+    },
+    {
+      "name": "西安 (Loreto)",
+      "location": [45.48680538348697, 9.218269840892003],
+      "type": "中餐",
+      "address": "Via Andrea Costa, 1, 20131",
+      "description": "陕味，小炒羊肉泡馍，绝了",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "重庆妈妈火锅店",
+      "location": [45.48260653357427, 9.178529645791674],
+      "type": "火锅",
+      "address": "Via Bramante, 35, 20154",
+      "description": "rj学长吃烤肉时都会惦记的店",
+      "price": "30-40欧/人"
+    },
+    {
+      "name": "Barbacoa Milano",
+      "location": [45.500246621662896, 9.198262549076409],
+      "type": "烤肉",
+      "address": "Via Scipio Slataper, 19, 20125",
+      "description": "学长推荐，贵",
+      "price": "巴西烤肉：70-80欧/人"
+    },
+    {
+      "name": "Sagapò Greek Street Food",
+      "location": [45.50466748577443, 9.164362611579634],
+      "type": "西餐",
+      "address": "Via Don Giuseppe Andreoli, 7, 20158 Milano MI",
+      "description": "希腊餐厅，卷饼加的酱味重些",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "Pan Sushi",
+      "location": [45.50257818079632, 9.156919696986217],
+      "type": "中餐",
+      "address": "Via Raffaele Lambruschini, 7, 20156 Milano MI",
+      "description": "好吃实惠，适合学生",
+      "price": "6-9欧/人"
+    },
+    {
+      "name": "东北小菜 Dongbei Food",
+      "location": [45.481669674108694, 9.172843968149463],
+      "type": "中餐",
+      "address": "Via Paolo Lomazzo, 10, 20154 Milano MI",
+      "description": "凉菜卤味",
+      "price": "9欧/人"
+    },
+    {
+      "name": "Xiao Hutong",
+      "location": [45.48138556457663, 9.17265106814949],
+      "type": "汤面",
+      "address": "Via Paolo Sarpi, 50, 20154 Milano MI",
+      "description": "特别特别特别好吃的麻辣烫，能加卤鸡爪",
+      "price": "10-15欧/人"
+    },
+    {
+      "name": "Tender",
+      "location": [45.49574194754968, 9.216732459208222],
+      "type": "西餐",
+      "address": "Piazza Morbegno, 20127 Milano MI",
+      "description": "happy hour是吃过最好的",
+      "price": "10-15欧/人"
+    },
+    {
+      "name": "Restaurant Ma La Tang North Gate",
+      "location": [45.49323212863532, 9.218968076921437],
+      "type": "中餐",
+      "address": "Viale Monza, 50, 20127 Milano MI",
+      "description": "回国的感觉",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "思源中国兰州牛肉面",
+      "location": [45.46201160625928, 9.191052835707275],
+      "type": "汤面",
+      "address": "Via Flavio Baracchini, 7, 20123",
+      "description": "牛肉面一绝，试试二柱子",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "Jollibee Milano",
+      "location": [45.462087421368594, 9.189964883936574],
+      "type": "炸物",
+      "address": "Piazza Armando Diaz, 7, 20123",
+      "description": "maybe世界第一炸鸡",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "Mr. Jiao",
+      "location": [45.48386592376301, 9.175094395577018],
+      "type": "汤面",
+      "address": "Via Messina, 20, 20154 Milano MI",
+      "description": "椒先生麻辣烫，不太辣，汤头很棒",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "Doppio Malto Milano Duomo",
+      "location": [45.46337156789379, 9.189778453248207],
+      "type": "西餐",
+      "address": "Via Dogana, 1, 20123 Milano MI",
+      "description": "能吃上一口热乎披萨，烤肉拼盘好吃",
+      "price": "20-30欧/人"
+    },
+    {
+      "name": "Dream Korean Restaurant",
+      "location": [45.47497563647756, 9.211244226909818],
+      "type": "炸物",
+      "address": "谷歌地图不准，可直接搜店名",
+      "description": "炸鸡炸鸡，超好吃韩式炸鸡，天天同学的心中第一",
+      "price": "20-30欧/人"
+    },
+    {
+      "name": "Ristorante Taiwan",
+      "location": [45.4837101667911, 9.197590166740964],
+      "type": "中餐",
+      "address": "Via Adda, 10, 20124 Milano MI",
+      "description": "台湾菜很好吃，推荐五味豆腐和卤肉饭！",
+      "price": "20-30欧/人"
+    },
+    {
+      "name": "满满登登",
+      "location": [45.49971107087298, 9.183942683938339],
+      "type": "中餐",
+      "address": "Via Carlo Imbonati, 12, 20159 Milano MI",
+      "description": "主打东北菜，烧烤炸串都很香",
+      "price": "20-30欧/人"
+    },
+    {
+      "name": "La Hora Feliz",
+      "location": [45.459581027300246, 9.182934812772492],
+      "type": "西餐",
+      "address": "Via S. Vito, 5, 20123 Milano MI",
+      "description": "点一杯喝的（13欧起鸡尾酒），然后随便吃，提拉米苏很好吃，服务员也会拿着大盘子送菜",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "Mao Hotpot 毛灶火锅",
+      "location": [45.47981251738932, 9.173525840276065],
+      "type": "火锅",
+      "address": "Via Giuseppe Giusti, 41, 20154 Milano MI",
+      "description": "自助火锅，晚上菜品丰富但贵一点，饮品额外收费",
+      "price": "30-40欧/人"
+    },
+    {
+      "name": "YuanZi HotPot Porta Venezia",
+      "location": [45.478536045718016, 9.207889968489935],
+      "type": "火锅",
+      "address": "Via S. Gregorio, 6, 20124 Milano MI",
+      "description": "火锅自助，种类丰富，虾滑，牛蹄筋，猪蹄这些小菜都好吃",
+      "price": "30-40欧/人"
+    },
+    {
+      "name": "La via della seta 大西北",
+      "location": [45.48819450161556, 9.159708197429596],
+      "type": "中餐",
+      "address": "Via Cenisio, 68, 20154 Milano MI",
+      "description": "西北菜，羊肉，羊杂，土豆泥，手抓饭！",
+      "price": "20-30欧/人"
+    },
+    {
+      "name": "Ravioli Bao",
+      "location": [45.457116466086696, 9.208246603588412],
+      "type": "中餐",
+      "address": "Via Bergamo, 12, 20135 Milano MI",
+      "description": "包子饺子小店，不是大餐哦，周日休息",
+      "price": "1-10欧/人"
+    },
+    {
+      "name": "Sumire",
+      "location": [45.47915649398665, 9.184380226265269],
+      "type": "日料",
+      "address": "Via Varese, 1, 20121 Milano MI",
+      "description": "咖喱饭好吃（但是只有中午菜单有\n晚上菜单的话就是些海鲜类\n高峰期可能需要提前预定",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "YiKo DimSum一口砂锅",
+      "location": [45.46406481652829, 9.187001483936713],
+      "type": "汤面",
+      "address": "Via Spadari, 8, 20123 Milano MI",
+      "description": "味道不差\n不止砂锅 别的什么都做的挺好的店\n服务员好像只有一个中国人",
+      "price": "20-30欧/人"
+    }
+
+  ]
+  }
+  
