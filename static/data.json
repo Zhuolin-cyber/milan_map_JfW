@@ -109,7 +109,7 @@
       "location": [45.481669674108694, 9.172843968149463],
       "type": "中餐",
       "address": "Via Paolo Lomazzo, 10, 20154 Milano MI",
-      "description": "凉菜卤味",
+      "description": "凉菜卤味十分下酒，推荐麻辣拌和鸡架，地方很小适合买回家吃",
       "price": "9欧/人"
     },
     {
@@ -247,6 +247,30 @@
       "address": "Via Spadari, 8, 20123 Milano MI",
       "description": "味道不差\n不止砂锅 别的什么都做的挺好的店\n服务员好像只有一个中国人",
       "price": "20-30欧/人"
+    },
+    {
+      "name": "周真真南昌拌粉",
+      "location": [45.48187981069577, 9.17918377223413],
+      "type": "汤面",
+      "address": "Via Bramante, 26, 20154 Milano MI",
+      "description": "爱吃拌粉的强烈推荐",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "东北是家Dongbeiciaga",
+      "location": [45.47935037265673, 9.180186103690025],
+      "type": "中餐",
+      "address": "Via Bramante, 7, 20154 Milano MI",
+      "description": "19.9的晚餐自助包饮料包甜品还有很多硬菜",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "Roadhouse Meatery",
+      "location": [45.4800725012716, 9.15554217379487],
+      "type": "西餐",
+      "address": "Shopping District, Piazza Tre Torri c/o, 20122 Milano MI",
+      "description": "每周日10欧排骨畅吃真的非常好吃 像奥尔良口味的排骨",
+      "price": "10-30欧/人"
     }
 
   ]
