@@ -221,7 +221,7 @@
       "location": [45.48819450161556, 9.159708197429596],
       "type": "中餐",
       "address": "Via Cenisio, 68, 20154 Milano MI",
-      "description": "西北菜，羊肉，羊杂，土豆泥，手抓饭！",
+      "description": "正宗西北菜，羊肉，羊杂，土豆泥，手抓饭！不会缺斤少两",
       "price": "20-30欧/人"
     },
     {
@@ -271,6 +271,134 @@
       "address": "Shopping District, Piazza Tre Torri c/o, 20122 Milano MI",
       "description": "Roadhouse是连锁店，每周日10欧排骨畅吃真的非常好吃 像奥尔良口味的排骨",
       "price": "10-30欧/人"
+    },
+    {
+      "name": "Pizzium - Isola",
+      "location": [45.48871374304571, 9.194390910629231],
+      "type": "西餐",
+      "address": "Via Pola, 11, 20124 Milano MI",
+      "description": "意大利本地人带着吃的披萨，还不错",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "Ristorante Poporoya",
+      "location": [45.47589905203241, 9.214645259517035],
+      "type": "日料",
+      "address": "Via Bartolomeo Eustachi, 17, 20129 Milano MI",
+      "description": "日本人开的店，比较正宗",
+      "price": "20-30欧/人"
+    },
+    {
+      "name": "Il Forno del Sud",
+      "location": [45.500340087187645, 9.149397892234903],
+      "type": "西餐",
+      "address": "Via Paolo Mantegazza, 25/1, 20156 Milano MI",
+      "description": "披萨便宜好吃，一个只要5-10欧，8.5欧的肉很多",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "Bakers Tinapayan",
+      "location": [45.50811542379891, 9.201880781794879],
+      "type": "甜品",
+      "address": "Viale Fulvio Testi, 70, 20126 Milano MI",
+      "description": "菲律宾人面包店，中国老面包味，1欧一个。egg pie是kfc蛋挞味，coco bread是椰蓉面包，还有菠萝包，布朗尼",
+      "price": "1-10欧/人"
+    },
+    {
+      "name": "DASHI PASTICCERIA",
+      "location": [45.48595470747617, 9.218905810629112],
+      "type": "甜品",
+      "address": "Via Nicola Antonio Porpora, 14, 20131 Milano MI",
+      "description": "中国人开的甜品店，好吃，店内装修很漂亮",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "Cioccolateria belga Charlotte Dusart",
+      "location": [45.482019036214574, 9.214002762701108],
+      "type": "甜品",
+      "address": "Via Bartolomeo Eustachi, 47, 20129 Milano MI",
+      "description": "比利时巧克力经理开的店，手工糖果流芯巧克力，会给你她家的巧克力种类册，价格略低venchi",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "杭州小笼包",
+      "location": [45.482109774215495, 9.181028554805065],
+      "type": "中餐",
+      "address": "Via Paolo Lomazzo, 2, 20154 Milano MI",
+      "description": "全米兰最好吃的包子店，小贵但值得（一个不写评论的朋友在他家写了评论）",
+      "price": "1-10欧/人"
+    },
+    {
+      "name": "Dipaola",
+      "location": [45.46057745000843, 9.098288997133608],
+      "type": "甜品",
+      "address": "Via delle Forze Armate, 328, 20152 Milano MI",
+      "description": "这有oO从出生到现在吃过最好吃的泡芙，回购30多次，每年早上爆满，旁边还有宝藏公园。端着点心看天鹅晒太阳，chill～",
+      "price": "1-10欧/人"
+    },
+    {
+      "name": "Istanbul Best 2",
+      "location": [45.46873938765903, 9.22343667295344],
+      "type": "西餐",
+      "address": "Piazzale Susa, 7, 20133 Milano MI",
+      "description": "kebab和披萨很好吃，米兰排的上号",
+      "price": "1-10欧/人"
+    },
+    {
+      "name": "Royal Duomo Turkish Kebap Pizza Grill Bar&Cocktail",
+      "location": [45.46123239862058, 9.184486910627928],
+      "type": "西餐",
+      "address": "Via Torino, 50, 20123 Milano MI",
+      "description": "土耳其同学觉得最好吃的kebab，味道好而且服务nice",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "二舅卤味",
+      "location": [45.47531697294361, 9.188846332292698],
+      "type": "中餐",
+      "address": "Via Montebello, 9-5, 20121 Milano MI",
+      "description": "可以辣，一个江西人会喜欢的店",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "Mao Hunan",
+      "location": [45.486279950195225, 9.218814154805225],
+      "type": "中餐",
+      "address": "Via Nicola Antonio Porpora, 5, 20131 Milano MI",
+      "description": "人称毛爷爷，湖南风味，吃辣的福音，一定要预约，店里很多意大利人",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "周真真南昌拌粉",
+      "location": [45.481361197293964, 9.17911943946406],
+      "type": "中餐",
+      "address": "Via Bramante, 26, 20154 Milano MI",
+      "description": "大家褒贬不一，但南昌人肯定这家辣度ok",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "Ristorante Cinese Shi yunjia",
+      "location": [45.480415466663736, 9.177259106330808],
+      "type": "中餐",
+      "address": "Via Giuseppe Giusti, 14, 20154 Milano MI",
+      "description": "煎饼果子，牛肉面，韭菜盒子，朴素但好吃的店",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "燉物",
+      "location": [45.48317009270506, 9.198600754805078],
+      "type": "日料",
+      "address": "Via Adda, 3, 20124 Milano MI",
+      "description": "拉面很好吃，肉很多，还有章鱼小丸子",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "BeiYuan Hotpot Maciachini 北园火锅",
+      "location": [45.4960122806152, 9.186451054805733],
+      "type": "中餐",
+      "address": "Via Luigi Federico Menabrea, 20, 20159 Milano MI",
+      "description": "好吃的火锅店，花胶鸡好喝，小贵",
+      "price": "30-40欧/人"
     }
 
   ]
