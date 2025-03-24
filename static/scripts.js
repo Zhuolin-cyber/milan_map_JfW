@@ -1,120 +1,129 @@
-// 初始化地图并设置米兰为中心
-var map = L.map('map').setView([45.4642, 9.19], 12);
+// // 初始化地图并设置米兰为中心
+// var map = L.map('map').setView([45.4642, 9.19], 12);
 
-// 使用 OpenStreetMap 图层
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
-}).addTo(map);
+// // 使用 OpenStreetMap 图层
+// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     maxZoom: 19,
+//     attribution: '© OpenStreetMap'
+// }).addTo(map);
+
+//修改为mapbox 可付费地图
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2VkcmZ0eXVpbyIsImEiOiJjbThuNjZsZWQxMTFwMmtxdXluZHFwMXJpIn0.KgvJVMSnEl7l3SL89yRkRQ'; // ← 替换成你自己的 token
+
+const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/standard',  // 使用 Mapbox 标准样式
+    center: [9.19, 45.4642],
+    zoom: 12
+});
+
+
 
 // 存储所有的标记
 var restaurantMarkers = [];
 
 // 预定义的图标
 var restaurantIcons = {
-  "中餐": L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/128/9237/9237589.png', iconSize: [25, 25] }),
-  "甜品": L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/128/992/992717.png', iconSize: [25, 25] }),
-  "西餐": L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/128/2872/2872222.png', iconSize: [25, 25] }),
-  "烤肉": L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/128/450/450098.png', iconSize: [25, 25] }),
-  "火锅": L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/128/890/890076.png', iconSize: [25, 25] }),
-  "日料": L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/128/2252/2252075.png', iconSize: [25, 25] }),
-  "汤面": L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/128/3084/3084875.png', iconSize: [25, 25] }),
-  "炸物": L.icon({ iconUrl: 'https://cdn-icons-png.flaticon.com/128/837/837606.png', iconSize: [25, 25] }),
+    "中餐": 'https://cdn-icons-png.flaticon.com/128/9237/9237589.png',
+    "甜品": 'https://cdn-icons-png.flaticon.com/128/992/992717.png',
+    "西餐": 'https://cdn-icons-png.flaticon.com/128/2872/2872222.png',
+    "烤肉": 'https://cdn-icons-png.flaticon.com/128/450/450098.png',
+    "火锅": 'https://cdn-icons-png.flaticon.com/128/890/890076.png',
+    "日料": 'https://cdn-icons-png.flaticon.com/128/2252/2252075.png',
+    "汤面": 'https://cdn-icons-png.flaticon.com/128/3084/3084875.png',
+    "炸物": 'https://cdn-icons-png.flaticon.com/128/837/837606.png',
 };
 
-// 创建图标注释控制层
-var legend = L.control({ position: 'topright' });
+// 创建图例元素
+var legend = document.createElement('div');
+legend.className = 'legend';
+legend.style.cssText = 'position: absolute; top: 13px; right: 13px; background: white; padding: 7px; font-size: 11px; max-height: 300px; overflow: auto; z-index: 1; border-radius: 6px; box-shadow: 0 0 5px rgba(0,0,0,0.3);';
 
-legend.onAdd = function (map) {
-    var div = L.DomUtil.create('div', 'legend');
-    div.innerHTML += '<h6 class="legend-title">图标注释</h6>';
-    
-    Object.keys(restaurantIcons).forEach(type => {
-        let checkedAttr = (type === "烤肉" || type === "日料") ? "" : "checked";  // 默认不勾选烤肉和日料
-        
-        div.innerHTML += `
-            <input type="checkbox" id="filter-${type}" ${checkedAttr} onchange="updateMarkers()">
-            <img src="${restaurantIcons[type].options.iconUrl}" style="width: 20px; height: 20px;"> ${type}<br>
-        `;
-    });
+// legend.innerHTML += '<strong>图标注释</strong><br>';
 
-    // 这里才是“选择全部”按钮，放在最后
-    div.innerHTML += `<hr>
-        <input type="checkbox" id="filter-all" checked onchange="toggleAllMarkers()">
-        <strong>显示全部</strong><br>`;
+Object.keys(restaurantIcons).forEach(type => {
+    let checkedAttr = (type === "烤肉" || type === "日料") ? "" : "checked";
+    legend.innerHTML += `
+        <input type="checkbox" id="filter-${type}" ${checkedAttr} onchange="updateMarkers()">
+        <img src="${restaurantIcons[type]}" > ${type}<br>
+    `;
+});
 
-    return div;
-};
+legend.innerHTML += `<hr>
+    <input type="checkbox" id="filter-all" checked onchange="toggleAllMarkers()">
+    <strong>显示全部</strong><br>`;
 
+// 把图例添加到 map 容器
+map.getContainer().appendChild(legend);
 
-legend.addTo(map);
-
-// 读取 JSON 数据并添加标记
+// 加载 JSON 数据
 fetch('static/data.json')
-  .then(response => response.json())
-  .then(data => {
-    // 先清空数组，防止重复加载
-    restaurantMarkers = [];
-    
-    data.restaurants.forEach(restaurant => {
-      var type = restaurant.type;
-      var icon = restaurantIcons[type] || restaurantIcons["默认"];
+    .then(response => response.json())
+    .then(data => {
+        restaurantMarkers = [];
 
-      var marker = L.marker(restaurant.location, { icon: icon })
-    .bindPopup(`
-        <b>${restaurant.name}</b><br>
-        地址：${restaurant.address}<br>
-        特色：${restaurant.description}<br>
-        价格：${restaurant.price}
-    `);
+        data.restaurants.forEach(restaurant => {
+            const type = restaurant.type;
+            const iconUrl = restaurantIcons[type] || restaurantIcons["默认"];
+        
+            const el = document.createElement('div');
+            el.className = 'marker';
+            el.style.backgroundImage = `url(${iconUrl})`;
+            el.style.width = '20px';
+            el.style.height = '20px';
+            el.style.backgroundSize = 'contain';
+        
+            const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
+                <b>${restaurant.name}</b><br>
+                地址：${restaurant.address}<br>
+                特色：${restaurant.description}<br>
+                价格：${restaurant.price}
+            `);
+        
+            // 修正坐标顺序
+            const [lat, lng] = restaurant.location;
+            const lngLat = [lng, lat];
+        
+            const marker = new mapboxgl.Marker(el)
+                .setLngLat(lngLat)
+                .setPopup(popup);
+        
+            restaurantMarkers.push({ marker: marker, type: type });
+        
+            if (type !== "烤肉" && type !== "日料") {
+                marker.addTo(map);
+            }
+        });
 
-
-      restaurantMarkers.push({ marker: marker, type: type });
-      
-      // **默认不显示"烤肉"和"日料"**
-      if (type !== "烤肉" && type !== "日料") {
-        marker.addTo(map);
-        }
+        updateMarkers(); // 初次更新
+    })
+    .catch(error => {
+        console.error('数据加载失败:', error);
     });
 
-    // 确保默认执行 `updateMarkers()`，同步显示状态
-    updateMarkers();
-  })
-  .catch(error => {
-    console.error('数据加载失败:', error);
-  });
-
-  window.updateMarkers = function () {
-    let allChecked = true; // 假设所有类别都被选中
+// 更新显示的标记
+window.updateMarkers = function () {
+    let allChecked = true;
 
     restaurantMarkers.forEach(entry => {
-        var checkbox = document.getElementById(`filter-${entry.type}`);
+        const checkbox = document.getElementById(`filter-${entry.type}`);
 
         if (checkbox && checkbox.checked) {
-            if (!map.hasLayer(entry.marker)) {
-                map.addLayer(entry.marker);  // 重新添加标记
-            }
+            entry.marker.addTo(map);
         } else {
-            if (map.hasLayer(entry.marker)) {
-                map.removeLayer(entry.marker);  // 隐藏标记
-            }
-            allChecked = false; // 如果有至少一个未选中，allChecked 设为 false
+            entry.marker.remove();  // Mapbox 的删除方式
+            allChecked = false;
         }
     });
-
-    // 更新“选择全部”按钮状态
     document.getElementById("filter-all").checked = allChecked;
 };
 
-
+// 控制全部显示/隐藏
 window.toggleAllMarkers = function () {
-    var allChecked = document.getElementById("filter-all").checked;
-    
-    // 更新所有类别的复选框状态
+    const allChecked = document.getElementById("filter-all").checked;
     Object.keys(restaurantIcons).forEach(type => {
         document.getElementById(`filter-${type}`).checked = allChecked;
     });
 
-    updateMarkers();  // 重新更新地图上的标记
+    updateMarkers();
 };
-
