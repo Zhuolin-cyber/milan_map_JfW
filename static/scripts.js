@@ -17,6 +17,7 @@ const map = new mapboxgl.Map({
     zoom: 12
 });
 
+map.addControl(new mapboxgl.NavigationControl({ showCompass: true }), 'top-left');
 
 
 // 存储所有的标记
@@ -69,8 +70,8 @@ fetch('static/data.json')
             const el = document.createElement('div');
             el.className = 'marker';
             el.style.backgroundImage = `url(${iconUrl})`;
-            el.style.width = '20px';
-            el.style.height = '20px';
+            el.style.width = '23px';
+            el.style.height = '23px';
             el.style.backgroundSize = 'contain';
         
             const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
