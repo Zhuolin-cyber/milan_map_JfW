@@ -447,6 +447,30 @@
       "address": "Via Don Giovanni Verità, 1, 20158 Milano MI",
       "description": "Gelato店，便宜，量大且味道不错，bovisa学生的充电桩",
       "price": "1-5欧/人"
+    },
+    {
+      "name": "东北饺子馆",
+      "location": [45.47945635011425, 9.173451510318845],
+      "type": "中餐",
+      "address": "Via Luigi Canonica, 40, 20154 Milano MI",
+      "description": "西葫芦萝卜鸡蛋饺子好吃，皮很劲道，味道不错",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "成都小馆Ristorante Cheng Du",
+      "location": [45.48076202026245, 9.216735260541844],
+      "type": "中餐",
+      "address": "Viale Abruzzi, 51, 20129 Milano MI",
+      "description": "冒烤鸭好吃！爱吃辣的冲",
+      "price": "20-30欧/人"
+    },
+    {
+      "name": "Miss Cake 蜜思蛋糕",
+      "location": [45.4807445740941, 9.177176326582337],
+      "type": "甜品",
+      "address": "Via Giordano Bruno, 1, 20154 Milano MI",
+      "description": "芋泥类甜品的福音",
+      "price": "1-10欧/人"
     }
 
   ]
