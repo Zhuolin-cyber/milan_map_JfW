@@ -249,14 +249,6 @@
       "price": "20-30欧/人"
     },
     {
-      "name": "周真真南昌拌粉",
-      "location": [45.48187981069577, 9.17918377223413],
-      "type": "汤面",
-      "address": "Via Bramante, 26, 20154 Milano MI",
-      "description": "爱吃拌粉的强烈推荐",
-      "price": "10-20欧/人"
-    },
-    {
       "name": "东北是家Dongbeiciaga",
       "location": [45.47935037265673, 9.180186103690025],
       "type": "中餐",
@@ -371,7 +363,7 @@
     {
       "name": "周真真南昌拌粉",
       "location": [45.481361197293964, 9.17911943946406],
-      "type": "中餐",
+      "type": "汤面",
       "address": "Via Bramante, 26, 20154 Milano MI",
       "description": "大家褒贬不一，但南昌人肯定这家辣度ok",
       "price": "10-20欧/人"
@@ -471,6 +463,14 @@
       "address": "Via Giordano Bruno, 1, 20154 Milano MI",
       "description": "芋泥类甜品的福音",
       "price": "1-10欧/人"
+    },
+    {
+      "name": "Batong Ristorante 八筒",
+      "location": [45.47959795625677, 9.211021457615766],
+      "type": "中餐",
+      "address": "Galleria Buenos Aires, 14, 20124 Milano MI",
+      "description": "必须要提前订位置否则等位很久，好评如潮的云南菜，想吃什么点什么",
+      "price": "20-30欧/人"
     }
 
   ]
