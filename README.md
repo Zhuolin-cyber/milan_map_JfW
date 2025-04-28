@@ -10,4 +10,4 @@
   所以有了这张地图，上面标记了我们切身体验过的好店，相信我，没有铺天盖地的虚假宣传，可能踩雷的店只有大家的口味不同。  
 
   **这个地图需要朋友们积极分享**，它才会越来越丰富，希望日后当我们来到米兰时，走过每个地方时都能很快找到附近的好吃的。
-![示例图片](static/exhibition.png)
+![地图示例](https://raw.githubusercontent.com/Zhuolin-cyber/milan_map_JfW/main/static/exhibition.png)
