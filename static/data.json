@@ -117,7 +117,7 @@
       "location": [45.48138556457663, 9.17265106814949],
       "type": "汤面",
       "address": "Via Paolo Sarpi, 50, 20154 Milano MI",
-      "description": "特别特别特别好吃的麻辣烫，能加卤鸡爪",
+      "description": "好吃够辣的麻辣烫，能加卤鸡爪",
       "price": "10-15欧/人"
     },
     {
@@ -205,7 +205,7 @@
       "location": [45.47981251738932, 9.173525840276065],
       "type": "火锅",
       "address": "Via Giuseppe Giusti, 41, 20154 Milano MI",
-      "description": "自助火锅，晚上菜品丰富但贵一点，饮品额外收费",
+      "description": "自助火锅，晚上菜品丰富但贵一点，有不限量荔枝和甜品",
       "price": "30-40欧/人"
     },
     {
@@ -247,14 +247,6 @@
       "address": "Via Spadari, 8, 20123 Milano MI",
       "description": "味道不差\n不止砂锅 别的什么都做的挺好的店\n服务员好像只有一个中国人",
       "price": "20-30欧/人"
-    },
-    {
-      "name": "东北是家Dongbeiciaga",
-      "location": [45.47935037265673, 9.180186103690025],
-      "type": "中餐",
-      "address": "Via Bramante, 7, 20154 Milano MI",
-      "description": "19.9的晚餐自助包饮料包甜品还有很多硬菜",
-      "price": "10-20欧/人"
     },
     {
       "name": "Roadhouse Meatery",
@@ -417,14 +409,6 @@
       "price": "30-40欧/人"
     },
     {
-      "name": "Ristorante Cinese dong bei si fang cai",
-      "location": [45.503282732865344, 9.18122256193722],
-      "type": "中餐",
-      "address": "Via Carlo Imbonati, 56, 20159 Milano MI",
-      "description": "价格很便宜且地道的东北菜",
-      "price": "10-20欧/人"
-    },
-    {
       "name": "Sweet Republic Cake Studio - 甜蜜共和",
       "location": [45.503973254259066, 9.180478629306402],
       "type": "甜品",
@@ -471,8 +455,39 @@
       "address": "Galleria Buenos Aires, 14, 20124 Milano MI",
       "description": "必须要提前订位置否则等位很久，好评如潮的云南菜，想吃什么点什么",
       "price": "20-30欧/人"
+    },
+    {
+      "name": "Yanso Korean BBQ",
+      "location": [45.48791857974139, 9.217368419048022],
+      "type": "烤肉",
+      "address": "Viale Monza, 6, 20127 Milano MI",
+      "description": "25上半年新开的烤肉店，五花肉可以烤的焦脆，肉质新鲜，牛舌不错",
+      "price": "30-40欧/人"
+    },
+    {
+      "name": "Yangguofu Malatang(杨国福米兰店)",
+      "location": [45.48170917745738, 9.180390656067319],
+      "type": "汤面",
+      "address": "Via Paolo Sarpi, 5, 20154 Milano MI",
+      "description": "25年新店，国内的味道",
+      "price": "10-20欧/人"
+    },
+    {
+      "name": "MILLIONS BBQ 萬两烤肉",
+      "location": [45.480738791630834, 9.180397350554028],
+      "type": "烤肉",
+      "address": "Via Giorgione, 6, 20154 Milano MI",
+      "description": "烤肉自助，芝士虾不错，环境舒适",
+      "price": "30-40欧/人"
+    },
+    {
+      "name": "Element Bā",
+      "location": [45.4870834485201, 9.186886308359313],
+      "type": "酒吧",
+      "address": "Via Carmagnola, 9, 20159 Milano MI",
+      "description": "鸡尾酒颜值高，口味层次丰富，十二生肖鸡尾酒各有特色",
+      "price": "10-20欧/人"
     }
-
   ]
   }
   
