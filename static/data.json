@@ -486,7 +486,8 @@
       "type": "酒吧",
       "address": "Via Carmagnola, 9, 20159 Milano MI",
       "description": "鸡尾酒颜值高，口味层次丰富，十二生肖鸡尾酒各有特色",
-      "price": "10-20欧/人"
+      "price": "10-20欧/人",
+      "image": ["/static/images/Element_Ba_1.jpg", "/static/images/Element_Ba_2.jpg"]
     }
   ]
   }

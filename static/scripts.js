@@ -75,13 +75,33 @@ fetch('static/data.json')
             el.style.height = '23px';
             el.style.backgroundSize = 'contain';
         
+//            const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
+//                <b>${restaurant.name}</b><br>
+//                地址：${restaurant.address}<br>
+//                特色：${restaurant.description}<br>
+//                价格：${restaurant.price}
+//            `);
+
+            let imagesHtml = "";
+            if (restaurant.image) {
+                restaurant.image.forEach(src => {
+                    // 注意：路径要用相对路径，比如 "images/xxx.jpg"
+                    imagesHtml += `
+                        <img src="${src}" alt="${restaurant.name}"
+                             style="width:80px; height:80px; object-fit:cover; margin:5px; border-radius:6px;">
+                    `;
+            });
+            }
+
             const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
                 <b>${restaurant.name}</b><br>
                 地址：${restaurant.address}<br>
                 特色：${restaurant.description}<br>
-                价格：${restaurant.price}
+                价格：${restaurant.price}<br>
+                ${imagesHtml}
             `);
-        
+
+
             // 修正坐标顺序
             const [lat, lng] = restaurant.location;
             const lngLat = [lng, lat];
