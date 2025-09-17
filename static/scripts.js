@@ -90,7 +90,7 @@ fetch('static/data.json')
                         <img src="${src}" alt="${restaurant.name}"
                              style="width:80px; height:80px; object-fit:cover; margin:5px; border-radius:6px;">
                     `;
-            });
+                });
             }
 
             const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
