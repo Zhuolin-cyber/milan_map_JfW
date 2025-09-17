@@ -33,6 +33,7 @@ var restaurantIcons = {
     "日料": 'https://cdn-icons-png.flaticon.com/128/2252/2252075.png',
     "汤面": 'https://cdn-icons-png.flaticon.com/128/3084/3084875.png',
     "炸物": 'https://cdn-icons-png.flaticon.com/128/837/837606.png',
+    "小吃": 'https://cdn-icons-png.flaticon.com/128/646/646573.png',
     "酒吧": 'https://cdn-icons-png.flaticon.com/128/3086/3086535.png',
 };
 

@@ -107,7 +107,7 @@
     {
       "name": "东北小菜 Dongbei Food",
       "location": [45.481669674108694, 9.172843968149463],
-      "type": "中餐",
+      "type": "小吃",
       "address": "Via Paolo Lomazzo, 10, 20154 Milano MI",
       "description": "凉菜卤味十分下酒，推荐麻辣拌和鸡架，地方很小适合买回家吃",
       "price": "9欧/人"
@@ -339,7 +339,7 @@
     {
       "name": "二舅卤味",
       "location": [45.47531697294361, 9.188846332292698],
-      "type": "中餐",
+      "type": "小吃",
       "address": "Via Montebello, 9-5, 20121 Milano MI",
       "description": "可以辣，一个江西人会喜欢的店",
       "price": "10-20欧/人"
@@ -488,7 +488,24 @@
       "description": "鸡尾酒颜值高，口味层次丰富，十二生肖鸡尾酒各有特色",
       "price": "10-20欧/人",
       "image": ["static/images/Element_Ba_1.jpg", "static/images/Element_Ba_2.jpg"]
+    },
+    {
+      "name": "Ristorante Shiyunjia",
+      "location": [45.4803005960485, 9.177323696141226],
+      "type": "小吃",
+      "address": "20154 Milano MI",
+      "description": "天津包子，白菜素包和小肉包都好吃",
+      "price": "10欧/人"
+    },
+      {
+      "name": "绝味鸭脖",
+      "location": [45.48132359096587, 9.175668322597886],
+      "type": "小吃",
+      "address": "Via Paolo Sarpi, 29, 20154 Milano MI",
+      "description": "甜辣好吃，麻辣会咸，鸭脖&鸭头&鸭锁骨可冲",
+      "price": "3-10欧/人"
     }
+
   ]
   }
   
