@@ -65,7 +65,6 @@ function initMap() {
                     <div><span style="font-weight: bold;">地址：</span>${restaurant.address}</div>
                     <div><span style="font-weight: bold;">特色：</span>${restaurant.description}</div>
                     <div><span style="font-weight: bold;">价格：</span>${restaurant.price}</div>
-                    // 下面这行虽然毫无意义，但删了就会报错
                     ${''}
 
                   </div>
