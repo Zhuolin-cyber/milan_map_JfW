@@ -11,8 +11,10 @@
     <!-- 删除这两行 Leaflet 样式 -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> -->
 
-    <!-- 替换为 Mapbox GL JS 样式 -->
-    <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet" />
+    <!-- 删除 Mapbox GL JS 样式 -->
+<!--    <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet" />-->
+
+
 
     <style>
         /* 确保地图可以正常显示 */
@@ -20,6 +22,12 @@
             height: 600px;
             width: 100%;
         }
+    </style>
+    <style>
+    /* 移除 Google 默认 InfoWindow 的关闭按钮 */
+    .gm-ui-hover-effect {
+        display: none !important;
+    }
     </style>
 </head>
 <body>
@@ -31,8 +39,16 @@
     <!-- 删除 Leaflet 脚本 -->
     <!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> -->
 
-    <!-- 替换为 Mapbox GL JS -->
-    <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js" defer></script>
+    <!-- 删除 Mapbox GL JS -->
+<!--    <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js" defer></script>-->
+
+    <!-- 替换为你的 Google Maps API KEY -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkq1kclrJyNQtucn6vYZkrg_GsIwwy76I&callback=initMap"
+        async defer>
+    </script>
+
+
 
     <!-- 引入外部 JavaScript 文件 -->
     <script src="static/scripts.js" defer></script>
