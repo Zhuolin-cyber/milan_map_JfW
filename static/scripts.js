@@ -232,3 +232,60 @@ window.showFullImage = function(src) {
     modal.innerHTML = `<img src="${src}" onclick="this.parentNode.remove()">`;
     document.body.appendChild(modal);
 };
+
+//数据和头像
+const demoMessages = [
+  { user: "草莓蛋糕", text: "chifa的肥肠豆花粉太好吃了吧！", avatar: "static/世界聊天demo头像/草莓蛋糕.jpg", time: "13分钟前" ,side: "left"},
+  { user: "BW", text: "明天有人一起去吃西安吗？", avatar: "static/世界聊天demo头像/本我.png", time: "10分钟前" ,side: "left"},
+  { user: "茄子", text: "我吃！馋那口肉夹馍了！", avatar: "static/世界聊天demo头像/茄子.jpg", time: "刚刚" ,side: "left"},
+
+];
+
+let msgIndex = 0;
+function addMessage() {
+  if (msgIndex >= demoMessages.length) return;
+  const msg = demoMessages[msgIndex];
+  const chatBox = document.getElementById("chat-messages");
+
+  const div = document.createElement("div");
+  div.className = `chat-review ${msg.side}`;
+  div.innerHTML = `
+    <img class="chat-avatar" src="${msg.avatar}">
+    <div class="chat-body">
+      <div class="chat-header">
+        <span class="chat-user">${msg.user}</span>
+        <span class="chat-time">${msg.time}</span>
+      </div>
+      <div class="chat-text">${msg.text}</div>
+    </div>
+  `;
+
+  chatBox.appendChild(div);
+  chatBox.scrollTop = chatBox.scrollHeight;
+  msgIndex++;
+}
+setInterval(addMessage, 2000);
+
+function sendMessage() {
+  const input = document.getElementById("chat-text");
+  const text = input.value.trim();
+  if (!text) return;
+
+  const chatBox = document.getElementById("chat-messages");
+  const div = document.createElement("div");
+  div.className = "chat-review right";  // 自己的消息右对齐
+  div.innerHTML = `
+    <img class="chat-avatar" src="static/世界聊天demo头像/小王子.png">
+    <div class="chat-body">
+      <div class="chat-header">
+        <span class="chat-user">小狐狸</span>
+        <span class="chat-time">${new Date().toLocaleTimeString()}</span>
+      </div>
+      <div class="chat-text">${text}</div>
+    </div>
+  `;
+  chatBox.appendChild(div);
+  chatBox.scrollTop = chatBox.scrollHeight;
+
+  input.value = ""; // 清空输入框
+}
